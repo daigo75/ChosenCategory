@@ -12,9 +12,9 @@ $PluginInfo["ChosenCategory"] = array(
 class ChosenPlugin extends Gdn_Plugin {
 
 	public function PostController_Render_Before($Sender) {
-		$Sender->AddCSSFile(__DIR__."/chosen.css");
-		$Sender->AddJsFile(__DIR__."/jquery.chosen.js");
-		$Sender->AddJsFile(__DIR__."/plugin.chosen.js");
+		$Sender->AddCSSFile("chosen.css", "plugins/ChosenCategory");
+		$Sender->AddJsFile("jquery.chosen.js", "plugins/ChosenCategory");
+		$Sender->AddJsFile("plugin.chosen.js", "plugins/ChosenCategory");
 	}
 	public function Setup(){}
 
